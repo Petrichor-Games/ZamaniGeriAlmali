@@ -5,10 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - "L\u0131ghtt"
-  - Kutu
   - Box
   - Barrel1
   - Book_1
+  - WallDecor_1
+  - Bush_1
+  - Brunch_1
+  - Mushroom_1
+  - Stump_1
   layers:
   - Default
   - TransparentFX
