@@ -17,6 +17,8 @@ TagManager:
   - "Qu\u0131\u0131l_1"
   - Skull_1
   - "Pot\u0131on_1"
+  - 'Engel '
+  - lavaPlatform
   layers:
   - Default
   - TransparentFX
