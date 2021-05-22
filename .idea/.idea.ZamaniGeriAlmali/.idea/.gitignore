@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.ZamaniGeriAlmali.iml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\Prince\Documents\GitHub\ZamaniGeriAlmali\.idea\.idea.ZamaniGeriAlmali\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
