@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58ac0b0c3e35fde4aad0820e485f46e3, type: 3}
   m_Name: TEST
   m_EditorClassIdentifier: 
-  chunkSize: {x: 20, y: 20}
+  chunkSize: {x: 10, y: 15}
   LevelChunks:
-  - {fileID: 5321619811497680722, guid: 3995173d141302548af6a88d3f964186, type: 3}
-  - {fileID: 3298584722399316521, guid: abb90183c2c6bd442b1293b48fc4f14e, type: 3}
-  - {fileID: 5321619811497680722, guid: 3995173d141302548af6a88d3f964186, type: 3}
+  - {fileID: 5839901798689638461, guid: ae5234fcd47ab0b459e3f6d4ae9d671f, type: 3}
+  - {fileID: 1871391436672935495, guid: 3af128c6e10bf00429a9f00e497f426b, type: 3}

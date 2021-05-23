@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
     public LevelChunkData[] LevelChunkData;
+    public LevelChunkData[] LevelChunkData2;
+    public LevelChunkData[] LevelChunkData3;
     public LevelChunkData FirstChunk;
     private LevelChunkData previousChunk;
     public Vector3 spawnOrigin;
@@ -47,18 +50,16 @@ public class LevelGenerator : MonoBehaviour
 
    
 
-    LevelChunkData PickNextChunk()
+    LevelChunkData PickNextChunk(LevelChunkData[] LCD)
     {
-        List<LevelChunkData> allowedChunkList = new List<LevelChunkData>();
+        List<LevelChunkData> allowedChunkList = LCD.ToList();
         LevelChunkData nextChunk = null;
 
         spawnPosition = spawnPosition + new Vector3(0f, 0, previousChunk.chunkSize.y);
 
-        nextChunk = LevelChunkData[Random.Range(0, allowedChunkList.Count)];
+        nextChunk = LCD[Random.Range(0, allowedChunkList.Count)];
 
         return nextChunk;
-
-
     }
 
     void PickAndSpawnChunk()
@@ -67,14 +68,28 @@ public class LevelGenerator : MonoBehaviour
          if (chunkCount==55)
          {
              
-             Instantiate(OyunSonuBolumu, spawnPosition + spawnOrigin, OyunSonuBolumu.transform.rotation);
+             LevelChunkData chunkToSpawn2 = PickNextChunk(LevelChunkData2);
+
+             GameObject objectFromChunk2 = chunkToSpawn2.LevelChunks[Random.Range(0, chunkToSpawn2.LevelChunks.Length)];
+             previousChunk = chunkToSpawn2;
+             var asd2 = Instantiate(objectFromChunk2, spawnPosition + spawnOrigin, objectFromChunk2.transform.rotation);
+             chunkCount++;
+
+             SpawnCoins(asd2);
          }
-         else if (chunkCount>55)
+         else if (chunkCount>110)
          {
-             return;
+             LevelChunkData chunkToSpawn2 = PickNextChunk(LevelChunkData3);
+
+             GameObject objectFromChunk2 = chunkToSpawn2.LevelChunks[Random.Range(0, chunkToSpawn2.LevelChunks.Length)];
+             previousChunk = chunkToSpawn2;
+             var asd2 = Instantiate(objectFromChunk2, spawnPosition + spawnOrigin, objectFromChunk2.transform.rotation);
+             chunkCount++;
+
+             SpawnCoins(asd2);
          }
         
-        LevelChunkData chunkToSpawn = PickNextChunk();
+        LevelChunkData chunkToSpawn = PickNextChunk(LevelChunkData);
 
         GameObject objectFromChunk = chunkToSpawn.LevelChunks[Random.Range(0, chunkToSpawn.LevelChunks.Length)];
         previousChunk = chunkToSpawn;

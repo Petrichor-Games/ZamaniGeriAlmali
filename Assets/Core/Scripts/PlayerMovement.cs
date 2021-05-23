@@ -132,45 +132,15 @@ public class PlayerMovement : MonoBehaviour
             clock.localTimeScale = 1f;
         }
         
-        
-        
-        switch (GM.GetState())
+        // Applying Gravity
+        if (cc.isGrounded == false)
         {
-            case STATE.RUN :
-
-                if (Speed < 40)
-                {
-                    Speed += Time.deltaTime * 0.5f;
-                }
-                
-                
-                if (death)
-                {
-                    return;
-                }
-            
-                // Applying Gravity
-                if (cc.isGrounded == false)
-                {
  
-                    movement.y += Physics.gravity.y * 0.08f;
+            movement.y += Physics.gravity.y * 0.08f;
  
-                }
-                var vector = new Vector3(0, movement.y * Time.deltaTime, Time.deltaTime * Speed);
-                // Applying Movement
-                cc.Move(vector);
-                break;
-            case STATE.DEAD :
-                rb.velocity = Vector3.zero;
-                break;
-            case STATE.ATTACK :
-                camera.transform.position = Vector3.Lerp(camera.transform.position, CamLoc.transform.position, Time.deltaTime);
-                camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, 98, Time.deltaTime);
-                break;
-            default:
-                break;
-            
         }
+        var vector = new Vector3(0, movement.y * Time.deltaTime, Time.deltaTime * Speed);
+        cc.Move(vector);
     }
 
     void Death()

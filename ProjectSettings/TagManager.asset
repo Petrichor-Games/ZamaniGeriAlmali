@@ -4,19 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - "L\u0131ghtt"
-  - Box
-  - Barrel1
-  - Book_1
-  - WallDecor_1
-  - Bush_1
-  - Brunch_1
-  - Mushroom_1
-  - Stump_1
-  - Cauldron_1
-  - "Qu\u0131\u0131l_1"
-  - Skull_1
-  - "Pot\u0131on_1"
+  - 'Engel '
   layers:
   - Default
   - TransparentFX

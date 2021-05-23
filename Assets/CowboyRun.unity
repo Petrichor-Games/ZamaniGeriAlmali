@@ -558,8 +558,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelChunkData:
   - {fileID: 11400000, guid: 7ed43a328e1d77e4fbc4e9dac04964a9, type: 2}
+  - {fileID: 11400000, guid: b64bf448564a5934bbb1ed821571c9ca, type: 2}
+  - {fileID: 11400000, guid: 451c526d48f51784d9ad968d7b20c26d, type: 2}
+  LevelChunkData2: []
+  LevelChunkData3: []
   FirstChunk: {fileID: 11400000, guid: 7ed43a328e1d77e4fbc4e9dac04964a9, type: 2}
-  spawnOrigin: {x: 0, y: 0, z: -45}
+  spawnOrigin: {x: 0, y: 0, z: -100}
   chunkstospawn: 10
   OyunSonuBolumu: {fileID: 5425339147837526598, guid: 5f10310c2c3b59c4fbb8ff2c77366b87,
     type: 3}
