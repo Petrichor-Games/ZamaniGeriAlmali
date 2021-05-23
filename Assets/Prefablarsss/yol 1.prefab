@@ -746,7 +746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c7a3a17d74ee84c9440557019ae687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinPrefab: {fileID: 0}
+  coinPrefab: {fileID: 7954841883639771301, guid: ec931e0ed6b08cb438af37208cf3d78c,
+    type: 3}
   coinSpawn: {fileID: 6758238856868283378}
 --- !u!1 &6758238858173132281
 GameObject:
@@ -805,7 +806,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c7a3a17d74ee84c9440557019ae687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinPrefab: {fileID: 0}
+  coinPrefab: {fileID: 7954841883639771301, guid: ec931e0ed6b08cb438af37208cf3d78c,
+    type: 3}
   coinSpawn: {fileID: 6758238858173132281}
 --- !u!1 &6758238858225517572
 GameObject:
@@ -864,7 +866,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c7a3a17d74ee84c9440557019ae687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinPrefab: {fileID: 0}
+  coinPrefab: {fileID: 7954841883639771301, guid: ec931e0ed6b08cb438af37208cf3d78c,
+    type: 3}
   coinSpawn: {fileID: 6758238858225517572}
 --- !u!1 &7191173498337853502
 GameObject:
