@@ -91,6 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1529514446567173513}
   - component: {fileID: 1529514446567173518}
+  - component: {fileID: 5629530549763684542}
   m_Layer: 0
   m_Name: coinSpawner (2)
   m_TagString: Untagged
@@ -125,6 +126,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 46, y: 0.3, z: 0.3}
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &5629530549763684542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529514446567173512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c7a3a17d74ee84c9440557019ae687, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 0}
+  coinSpawn: {fileID: 1529514446567173512}
 --- !u!1 &1529514447334278019
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1529514447334278016}
   - component: {fileID: 1529514447334278017}
+  - component: {fileID: 9196125805869916727}
   m_Layer: 0
   m_Name: coinSpawner (1)
   m_TagString: Untagged
@@ -154,7 +170,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1347513296368532733}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1529514447334278017
 BoxCollider:
@@ -169,6 +185,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 46, y: 0.3, z: 0.3}
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &9196125805869916727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529514447334278019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c7a3a17d74ee84c9440557019ae687, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 0}
+  coinSpawn: {fileID: 1529514447334278019}
 --- !u!1 &1529514447386749566
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,6 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1529514447386749567}
   - component: {fileID: 1529514447386749564}
+  - component: {fileID: 9061549425396247351}
   m_Layer: 0
   m_Name: coinSpawner
   m_TagString: Untagged
@@ -198,7 +229,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1347513296368532733}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1529514447386749564
 BoxCollider:
@@ -213,6 +244,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 46, y: 0.3, z: 0.3}
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &9061549425396247351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529514447386749566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c7a3a17d74ee84c9440557019ae687, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 0}
+  coinSpawn: {fileID: 1529514447386749566}
 --- !u!1 &1871391436672935495
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,9 +296,9 @@ Transform:
   - {fileID: 4135955062757798481}
   - {fileID: 8557304208739329118}
   - {fileID: 2038802971770924560}
-  - {fileID: 1347513297778189646}
   - {fileID: 1529514447386749567}
   - {fileID: 1529514447334278016}
+  - {fileID: 4488027959606530955}
   - {fileID: 1529514446567173513}
   - {fileID: 3794542061968106373}
   - {fileID: 8107113801349365242}
@@ -516,6 +561,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4378845668102099652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1529514446434747045}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1347513297778189646}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1347513297778189646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: de0fbdfba7978424cb99efd9e7e9c187,
+    type: 3}
+  m_PrefabInstance: {fileID: 1529514446434747045}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4378845668102099652}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4488027959606530955}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5126872127753489422
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +835,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8023212842520232816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1529514446434747045}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4488027959606530955}
+  m_Layer: 0
+  m_Name: yol (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4488027959606530955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1529514446434747045}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8023212842520232816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1347513297778189646}
+  m_Father: {fileID: 1347513296368532733}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8155327015416428301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,12 +1218,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de0fbdfba7978424cb99efd9e7e9c187, type: 3}
---- !u!4 &1347513297778189646 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: de0fbdfba7978424cb99efd9e7e9c187,
-    type: 3}
-  m_PrefabInstance: {fileID: 1529514446434747045}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2737689777225646210
 PrefabInstance:
   m_ObjectHideFlags: 0
